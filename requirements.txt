@@ -1,0 +1,11 @@
+dotenv
+Chroma
+HuggingFaceEmbeddings
+LangChain
+GoogleGenerativeAI
+TextLoader
+RecursiveCharacterTextSplitter
+PIIAgent
+PromptTemplate
+FastAPI
+sentence-transformers
