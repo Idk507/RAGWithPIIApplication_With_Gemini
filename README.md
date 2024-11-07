@@ -44,6 +44,69 @@ This repository contains a Retrieval-Augmented Generation (RAG) application that
    from dotenv import load_dotenv
    load_dotenv()
    ```
+Here’s the `requirements.txt` file based on the libraries and tools used in the code:
+
+```txt
+dotenv
+Chroma
+HuggingFaceEmbeddings
+LangChain
+GoogleGenerativeAI
+TextLoader
+RecursiveCharacterTextSplitter
+PIIAgent
+PromptTemplate
+FastAPI
+sentence-transformers
+```
+
+Explanation of each library included in the `requirements.txt`:
+
+1. **dotenv**: 
+   - Used for loading environment variables from a `.env` file into your program. This allows sensitive data, such as API keys or other configuration settings, to be kept outside the codebase.
+
+2. **Chroma**: 
+   - A vector database used to store and retrieve document embeddings (vector representations of documents) for efficient retrieval in the Retrieval-Augmented Generation (RAG) system.
+
+3. **HuggingFaceEmbeddings**: 
+   - A class used to load pre-trained embeddings from Hugging Face models. These embeddings are typically used for turning textual content into numerical vectors.
+
+4. **LangChain**: 
+   - A framework used to develop applications powered by large language models (LLMs). LangChain allows chaining together LLMs, document retrieval, and prompt engineering.
+
+5. **GoogleGenerativeAI**: 
+   - A class used to interact with Google's Gemini API for natural language generation. It allows for easy integration with Google's powerful language model to generate text or process queries.
+
+6. **TextLoader**: 
+   - A utility that loads textual documents from a specified directory or file, enabling easy processing and storage.
+
+7. **RecursiveCharacterTextSplitter**: 
+   - A tool used to split documents into smaller chunks of text while maintaining logical coherence. It's particularly useful when dealing with large documents that need to be broken down into smaller parts for easier processing.
+
+8. **PIIAgent**: 
+   - This represents an agent responsible for handling personally identifiable information (PII). It anonymizes and deanonymizes PII from the content before storing or returning it.
+
+9. **PromptTemplate**: 
+   - A class used to define templates for prompts, especially useful in setting up input and output formats for models. It helps generate consistent and structured prompts for the system.
+
+10. **FastAPI**: 
+    - A modern, fast (high-performance), web framework for building APIs with Python 3.7+ based on standard Python type hints. It is often used for building RESTful APIs that interact with machine learning models.
+
+11. **sentence-transformers**: 
+    - A library that provides pre-trained transformer models specifically fine-tuned for generating embeddings for sentences or paragraphs. These embeddings can then be used for tasks like similarity search, clustering, or document retrieval.
+
+### Additional Notes:
+- **Chroma**: For database persistence and storage.
+- **HuggingFaceEmbeddings**: To embed documents and queries as vectors.
+- **LangChain and GoogleGenerativeAI**: For chaining retrieval and response generation tasks. 
+
+Save this file as `requirements.txt` and you can install all dependencies by running:
+
+```bash
+pip install -r requirements.txt
+```
+
+Let me know if you need further details!
 
 ## Usage
 
